@@ -10,8 +10,8 @@ const Card = () => {
       </div>
       <div className="mt-2 mr-2 justify-start text-blue-900 gap-2">
         <div className="flex items-center ">
-          <h1 className="text-lg font-semibold">52.00</h1>
-          <h2 className="text-sm">USD</h2>
+          <h2 className="text-lg font-semibold">52.00</h2>
+          <h3 className="text-sm">USD</h3>
         </div>
         <p className="my-2">
           Descripcion, vendo casa en vaqueros bla b la comoda comodisima mucho
