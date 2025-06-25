@@ -1,0 +1,86 @@
+const Rutas = () => {
+  return (
+    <div className="fixed inset-0 bg-azul/80 sm:bg-azul/70 flex items-center justify-center z-50">
+      <div className="mt-15 relative flex flex-col md:flex-row bg-white/95 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.40)] rounded p-7 w-[90%] md:w-[70%] mx-5 md:mx-20 mb-20 h-[90%] md:h-[70%] overflow-hidden">
+        <div className="absolute top-3 right-3 z-20 ">
+          <button>
+            <img src="./assets/cerrar.svg" alt="cerrar" />
+          </button>
+        </div>
+        <div className="flex flex-col md:flex-row h-full w-full">
+          <div className="flex flex-col flex-2 md:flex-1 md:mx-2 h-full overflow-hidden shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+            <img
+              className="object-cover h-full w-full rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+              src="/assets/img-prueba.jpg"
+              alt="Img prueba"
+            />
+          </div>
+          <div className="flex gap-0.3 mt-2 md:mt-0  md:mr-3 md:flex-col flex-1 h-1/5 mb-1 md:mb-2 md:h-full overflow-hidden md:grid md:grid-rows-3">
+            <img
+              className="object-cover h-full  w-full mb-2 rounded-sm md:rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+              src="/assets/img-prueba.jpg"
+              alt="Img prueba"
+            />
+            <img
+              className="object-cover h-full  w-full mb-2 rounded-sm md:rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+              src="/assets/img-prueba.jpg"
+              alt="Img prueba"
+            />
+            <img
+              className="object-cover h-full  w-full mb-2 rounded-sm md:rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
+              src="/assets/img-prueba.jpg"
+              alt="Img prueba"
+            />
+          </div>
+          <div className="mt-1 md:mt-2 justify-start flex-2 md:flex-[1.5] text-blue-900 gap-2">
+            <div className="flex items-center ">
+              <h1 className="text-lg font-semibold">52.00</h1>
+              <h2 className="text-sm">USD</h2>
+            </div>
+            <p className="my-2 text-base font-semibold">
+              Vaqueros, Direccion X
+            </p>
+            <p className="my-2">
+              Descripcion, vendo casa en vaqueros bla b la comoda comodisima
+              mucho que contar
+            </p>
+            <div className="flex items-center gap-4 text-xs">
+              <div className="flex items-center gap-1 ">
+                <img src="/assets/m2-tarjeta.svg" alt="m2" />
+                <h6>150 m2</h6>
+              </div>
+              <div className="flex items-center gap-1">
+                <img src="/assets/hab-tarjeta.svg" alt="hab" />
+                <h6>2 Habs.</h6>
+              </div>
+              <div className="flex items-center gap-1">
+                <img src="/assets/bano-tarjeta.svg" alt="baño" />
+                <h6>1 Baño</h6>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 mt-4 md:mt-8 justify-end">
+              <img
+                className="w-4 h-4"
+                src="/assets/wapp-tarjeta.svg"
+                alt="Whatsapp"
+              />
+              <img
+                className="w-4 h-4"
+                src="/assets/tel-tarjeta.svg"
+                alt="Llamada"
+              />
+              <img
+                className="w-4 h-4"
+                src="/assets/email-tarjeta.svg"
+                alt="Gmail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Rutas;
