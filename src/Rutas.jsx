@@ -15,7 +15,7 @@ const Rutas = () => {
               alt="Img prueba"
             />
           </div>
-          <div className="flex gap-0.3 mt-2 md:mt-0  md:mr-3 md:flex-col flex-1 h-1/5 mb-1 md:mb-2 md:h-full overflow-hidden md:grid md:grid-rows-3">
+          <div className="flex gap-1 mt-2 md:mt-0  md:mr-3 md:flex-col flex-1 h-1/5 mb-1 md:mb-2 md:h-full overflow-hidden md:grid md:grid-rows-3">
             <img
               className="object-cover h-full  w-full mb-2 rounded-sm md:rounded-lg shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"
               src="/assets/img-prueba.jpg"
@@ -44,16 +44,16 @@ const Rutas = () => {
               Descripcion, vendo casa en vaqueros bla b la comoda comodisima
               mucho que contar
             </p>
-            <div className="flex items-center gap-4 text-xs">
-              <div className="flex items-center gap-1 ">
+            <div className="flex items-center gap-4 text-xs ">
+              <div className="flex items-start md:items-center gap-1 flex-col md:flex-row ">
                 <img src="/assets/m2-tarjeta.svg" alt="m2" />
                 <h6>150 m2</h6>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-start md:items-center gap-1 flex-col md:flex-row">
                 <img src="/assets/hab-tarjeta.svg" alt="hab" />
                 <h6>2 Habs.</h6>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-start md:items-center gap-1 flex-col md:flex-row">
                 <img src="/assets/bano-tarjeta.svg" alt="baño" />
                 <h6>1 Baño</h6>
               </div>
