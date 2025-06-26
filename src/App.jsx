@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-azul">
       <Encabezado />
-      <main className="overflow-y-auto h-[75vh]">
+      <main>
         <Rutas />
       </main>
       <Pie />

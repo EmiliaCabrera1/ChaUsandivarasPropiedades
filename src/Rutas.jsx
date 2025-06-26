@@ -1,14 +1,18 @@
 const Rutas = () => {
   return (
-    <div className="mt-6 text-white flex flex-col gap-4 w-full h-full">
-      <div className="my-4 text-base sm: mt-2 sm:text-xl w-full text-center">
+    <div className="text-white flex flex-col gap-4 w-full h-[85vh] sm:h-[75vh] overflow-y-auto">
+      <div className="my-4 text-base sm:mt-4 sm:text-xl text-center">
         <h1>ALQUILER-VENTA-COMPRA-TASACIONES INMOBILIARIAS</h1>
       </div>
-      <div className="flex flex-col sm:flex-row justify-center gap-10 lg:gap-20 mx-auto w-full sm:w-[50%] sm:h-[50%] sm:items-center">
-        <div className="mx-auto sm:mx-8 w-[30%] h-[30%] sm:w-[40%] sm:h-[40%] object-cover ">
-          <img src="/assets/logo-contacto.svg" alt="Logo" />
+      <div className="flex flex-col sm:flex-row justify-center gap-10 lg:gap-20 mx-auto w-full h-full max-h-full sm:items-center">
+        <div className="mx-auto sm:mx-0">
+          <img
+            className="max-h-[40vh] object-scale-down"
+            src="/assets/logo-contacto.svg"
+            alt="Logo"
+          />
         </div>
-        <div className="text-xs mt-10 sm:mt-0 mx-auto sm:text-sm gap-2 md:my-auto sm:w-[40%] sm:h-[40%]  ">
+        <div className="text-xs gap-2 mx-auto sm:mx-0 sm:text-sm">
           <div className="mx-4 mb-8">
             <h2>DIEGO CHA USANDIVARAS</h2>
             <p className="flex items-center gap-2 mt-3 mb-2">
