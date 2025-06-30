@@ -1,14 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const opcionesPropiedades = [
-  { valor: "hide", etiqueta: "Propiedades" },
-  { valor: "casa", etiqueta: "Casa" },
-  { valor: "departamento", etiqueta: "Departamento" },
-  { valor: "terreno", etiqueta: "Terreno" },
-  { valor: "comercio", etiqueta: "Comercio" },
-];
-
-function SelectPersonalizado({ opciones }) {
+export default function SelectPersonalizado({ opciones }) {
   const [seleccionado, setSeleccionado] = useState(opciones[0]);
   const [abierto, setAbierto] = useState(false);
   const referencia = useRef(null);
