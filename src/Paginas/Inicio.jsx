@@ -1,65 +1,44 @@
-import { useState, useEffect, useRef } from "react";
+import BarraDeBusqueda from "../Componentes/BarraDeBusqueda/BarraDeBusqueda";
+import Card from "../Componentes/Card";
 
-const opcionesPropiedades = [
-  { valor: "hide", etiqueta: "Propiedades" },
-  { valor: "casa", etiqueta: "Casa" },
-  { valor: "departamento", etiqueta: "Departamento" },
-  { valor: "terreno", etiqueta: "Terreno" },
-  { valor: "comercio", etiqueta: "Comercio" },
-];
+const propiedades = [{
+  img: "/assets/img-prueba.jpg",
+  valor: 57.00,
+  descripcion: "Descripcion, vendo casa en vaqueros bla b la comoda comodisima mucho que contar",
+  m2: 150,
+  habitaciones: 2,
+  banos: 1,
+  direccion: "Vaqueros, Direccion X",
+  imgs: [
+    "/assets/img-prueba.jpg",
+    "/assets/img-prueba.jpg",
+    "/assets/img-prueba.jpg"
+  ]
+}, {
+  img: "/assets/img-prueba.jpg",
+  valor: 180.00,
+  descripcion: "Descripcion, vendo casa en vaqueros bla b la comoda comodisima mucho que contar",
+  m2: 150,
+  habitaciones: 2,
+  banos: 1,
+  direccion: "Vaqueros, Direccion X",
+    imgs: [
+    "/assets/img-prueba.jpg",
+    "/assets/img-prueba.jpg",
+    "/assets/img-prueba.jpg"
+  ]
+}]
 
-function SelectPersonalizado({ opciones }) {
-  const [seleccionado, setSeleccionado] = useState(opciones[0]);
-  const [abierto, setAbierto] = useState(false);
-  const referencia = useRef(null);
-
-  useEffect(() => {
-    const manejarClickFuera = (evento) => {
-      if (referencia.current && !referencia.current.contains(evento.target)) {
-        setAbierto(false);
-      }
-    };
-    document.addEventListener("mousedown", manejarClickFuera);
-    return () => document.removeEventListener("mousedown", manejarClickFuera);
-  }, []);
-
+const Inicio = () => {
   return (
-    <div ref={referencia} className="relative w-56 select-none">
-      <div
-        onClick={() => setAbierto(!abierto)}
-        className="bg-transparent border border-white text-white py-2 px-4 rounded-md cursor-pointer flex justify-between items-center hover:bg-white/10"
-      >
-        {seleccionado.etiqueta}
-        <span
-          className={`ml-2 transition-transform ${abierto ? "rotate-180" : ""}`}
-        >
-          ▼
-        </span>
+    <div className="mt-8 sm:mt-14">
+      <BarraDeBusqueda />
+      <div>
+        {propiedades.map((propiedad, index) => (
+          <Card key={index}
+            propiedad={propiedad} />))}
       </div>
-
-      {abierto && (
-        <ul className="absolute w-full bg-white/10 rounded-md mt-1 z-10 shadow-md backdrop-blur">
-          {opciones.map(
-            (opcion) =>
-              opcion.valor !== "hide" && (
-                <li
-                  key={opcion.valor}
-                  onClick={() => {
-                    setSeleccionado(opcion);
-                    setAbierto(false);
-                  }}
-                  className={`py-2 px-4 text-white hover:bg-white/20 border-t border-white/30 ${
-                    seleccionado.valor === opcion.valor
-                      ? "bg-white/30 font-bold"
-                      : ""
-                  }`}
-                >
-                  {opcion.etiqueta}
-                </li>
-              )
-          )}
-        </ul>
-      )}
-    </div>
-  );
+    </div>)
 }
+
+export default Inicio

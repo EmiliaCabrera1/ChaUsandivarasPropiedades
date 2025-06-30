@@ -5,7 +5,7 @@ import Contacto from "./Paginas/Contacto";
 const Rutas = () => {
   return (
     <Routes>
-      <Route path="/inicio" element={<Inicio />} />
+      <Route path="/" element={<Inicio />} />
       <Route path="/contacto" element={<Contacto />} />
     </Routes>
   );

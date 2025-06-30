@@ -1,6 +1,6 @@
 const Contacto = () => {
   return (
-    <div className="text-white flex flex-col gap-4 w-full h-[85vh] sm:h-[75vh] overflow-y-auto">
+    <div className="text-white flex flex-col gap-4">
       <div className="my-4 text-base sm:mt-4 sm:text-xl text-center">
         <h1>ALQUILER-VENTA-COMPRA-TASACIONES INMOBILIARIAS</h1>
       </div>
